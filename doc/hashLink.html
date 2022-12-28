@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hash link</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/link01.css">
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header id="header">
+            <h1>
+                <a href="/">
+                    <img src="../img/logo_w.png" alt="">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#l01">menu01</a></li>
+                    <li><a href="#l02">menu02</a></li>
+                    <li><a href="#l03">menu03</a></li>
+                    <li><a href="#l04">menu04</a></li>
+                    <li><a href="#l05">menu05</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="sec sec01 sticky" id="l01">
+                <span>01</span>
+            </section>
+            <section class="sec sec02 sticky" id="l02">
+                <span>02</span>
+            </section>
+            <section class="sec sec03 sticky" id="l03">
+                <span>03</span>
+            </section>
+            <section class="sec sec04 sticky" id="l04">
+                <span>04</span>
+            </section>
+            <section class="sec sec05 sticky" id="l05">
+                <span>05</span>
+            </section>
+        </main>
+        <footer id="footer">
+            &copy; 20221228 lee.
+        </footer>
+    </div>
+    <script>
+        $(function () {
+            $('.gnb a').on('click', function (e) {
+                e.preventDefault();
+                var _top = $(this.hash).offset().top;
+                $('html, body').animate({ scrollTop: _top })
+            });
+        })
+    </script>
+</body>
+
+</html>

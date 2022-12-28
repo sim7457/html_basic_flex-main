@@ -1,0 +1,15 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background: tomato;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+}
+
+.main {
+    height: 200vh;
+    background: #333;
+    color: #fff;
+}

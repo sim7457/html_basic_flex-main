@@ -1,0 +1,50 @@
+#header {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    border-radius: 0 0 50px 50px;
+    overflow: hidden;
+}
+
+
+#header h1 {
+    line-height: 120px;
+    text-align: center;
+}
+
+#header .gnb {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .gnb>ul {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+}
+
+#header .gnb>ul>li~li {
+    border-left: 1px solid #ddd;
+}
+
+#header .gnb>ul>li>a {
+    display: block;
+    padding: 0 30px;
+}
+
+#mainVisual {
+    height: 200vh;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 30px 0 50px 0;
+}

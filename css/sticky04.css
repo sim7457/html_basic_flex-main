@@ -1,0 +1,55 @@
+#header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+}
+
+#header h1 {
+    line-height: 120px;
+    text-align: center;
+}
+
+#header .gnb {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .gnb>ul {
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+}
+
+#header .gnb>ul>li~li {
+    border-left: 1px solid #ddd;
+}
+
+#header .gnb>ul>li>a {
+    display: block;
+    padding: 0 30px;
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+}
+
+.sticky {
+    position: sticky;
+    top: 162px;
+}
+
+.sec:nth-child(odd) {
+    background: #333;
+    color: #fff;
+}
+
+#footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 30px 0 50px 0;
+}
